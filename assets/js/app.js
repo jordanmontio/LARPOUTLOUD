@@ -120,7 +120,7 @@ function slides() {
 
 var typed6 = new Typed(".info__text", {
   strings: [
-    "I'm Josef, a dedicated, disciplined, and dynamic designer who  makes purposeful and pragmatic designs. I am most interested in the intersection of design and technology,helping create content and experiences to pragmatically alleviate pain points and humanise technology.",
+    "I'm Josef, a dedicated, disciplined, and dynamic designer who  makes purposeful and pragmatic designs. I am most interested in the intersection of design and technology, helping create content and experiences to pragmatically alleviate pain points and humanise technology.",
   ],
   typeSpeed: 25,
   backSpeed: 0,
