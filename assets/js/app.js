@@ -120,7 +120,7 @@ function slides() {
 
 var typed6 = new Typed(".info__text", {
   strings: [
-    "I'm Josef, a dedicated, disciplined, and dynamic designer who  makes purposeful and pragmatic designs. I am most interested in the intersection of design and technology, helping create content and experiences to pragmatically alleviate pain points and humanise technology.",
+    "I'm Josef, a dedicated, disciplined, and dynamic designer who  makes purposeful and pragmatic designs. I am most interested in the intersection of design and technology,helping create content and experiences to pragmatically alleviate pain points and humanise technology.",
   ],
   typeSpeed: 25,
   backSpeed: 0,
@@ -130,7 +130,7 @@ var typed6 = new Typed(".info__text", {
 
 
 var j$ = jQuery,
-    $nav = j$(".nav-tabs"),
+    $nav = j$(".navbar-left"),
     $slideLine = j$(".nav-border"),
     $currentItem = j$(".nav-link.active");
 
@@ -173,59 +173,9 @@ j$(function(){
 });
 
 
-// j$($nav).find(".nav-link").click(
-//   // Hover on
-//   function(){
-
-//     if (this) { 
-//       $slideLine.css({
-//         "width": j$(this).outerWidth(),
-//         "height": j$(this).outerHeight(),
-//         "left": j$(this).position().left
-//       });
-//     }
-//   },
-//   // // Hover out
-//   function(){
-//     if ($currentItem[0]) {
-//       // Go back to current
-//       $slideLine.css({
-//         "width": $currentItem.outerWidth(),
-//         "height": $currentItem.outerHeight(),
-//         "left": $currentItem.position().left
-//       });
-//     } else {
-//       // Disapear
-//       $slideLine.width(0);
-//     }
-//   }
-//  );
-
-
-
-
-
-// $('.nav-tabs .nav-link').hover(
-//   function() {
-//     if (window.innerWidth > 992) {
-//       if($(this).hasClass('active')){
-//         $('.cursor').hide();
-//       }
-//     }
-//   }, function() {
-//     if (window.innerWidth > 992) {
-//       if($(this).hasClass('active')){
-//         $('.cursor').show();
-//       }
-//     }
-//   }
-// )
-
-
-
 $('.nav-tabs .nav-link').click(function(){
-    if($('.work-wrapper').hasClass('active')) {
-      $('.work-wrapper').removeClass('active');
-      $('.work__content-container').removeClass('active');
+    if($('.work-wrapper,.gallery__content').hasClass('active')) {
+      $('.work-wrapper,.gallery__content ').removeClass('active');
+      $('.work__content-container,.gallery-wrapper').removeClass('active');
     }
 })
